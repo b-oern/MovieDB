@@ -62,6 +62,7 @@ INSERT INTO Genre VALUES (3, 'Comic Verfilmung');
 INSERT INTO Genre VALUES (4, 'Action');
 INSERT INTO Genre VALUES (5, 'Fantasy');
 INSERT INTO Genre VALUES (6, 'Animation');
+INSERT INTO Genre VALUES (7, 'Thriller');
 
 SET DEFINE OFF;
 
