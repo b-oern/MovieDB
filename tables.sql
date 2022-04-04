@@ -1,4 +1,3 @@
-
 DROP TABLE Movies;
 DROP VIEW Filme;
 
@@ -26,6 +25,8 @@ CREATE TABLE Personen(
   Lastname VARCHAR2(128)
 );
 
+DROP TABLE PersonMoive;
+
 CREATE TABLE PersonMoive(
 	PersonID NUMBER(8),
 	MovieID NUMBER(8),
@@ -46,7 +47,7 @@ CREATE VIEW Filme AS
     Certificate AS Altersbeschraenkung, 
     SequelOf AS FortsetzungVon,
     distribution AS Verleih
-  FROM Movie;
+  FROM Movies;
 
 
 DROP TABLE Genres;
@@ -126,48 +127,47 @@ INSERT INTO Movies
 INSERT INTO Movies 
   VALUES(20, 'Toy Story 3', TO_DATE('2010/07/29', 'yyyy/mm/dd'), 6, 200000000, 109000000, 414984497, 103, 0, null, 'Walt Disney Studios');
 
-INSERT INTO Personen (1, 'James', 'Cameron');
-INSERT INTO Personen (2, 'J. J.', 'Abrams');
-INSERT INTO Personen (3, 'Colin', 'Trevorrow');
-INSERT INTO Personen (4, 'Joss', 'Whedon');
-INSERT INTO Personen (5, 'James', 'Wan');
-INSERT INTO Personen (6, 'David', 'Yates');
-INSERT INTO Personen (7, 'Chris', 'Buck');
-INSERT INTO Personen (8, 'Jennifer', 'Lee');
-INSERT INTO Personen (9, 'Bill', 'Condon');
-INSERT INTO Personen (10, 'F. Gary', 'Gray');
-INSERT INTO Personen (11, 'Shane', 'Black');
-INSERT INTO Personen (12, 'Pierre', 'Coffin');
-INSERT INTO Personen (13, 'Kyle', 'Balda');
-INSERT INTO Personen (14, 'Anthony', 'Russo');
-INSERT INTO Personen (15, 'Joe', 'Russo');
-INSERT INTO Personen (16, 'Michael', 'Bay');
-INSERT INTO Personen (17, 'Peter', 'Jackson');
-INSERT INTO Personen (18, 'Sam', 'Mendes');
-INSERT INTO Personen (19, 'Christopher', 'Nolan');
-INSERT INTO Personen (20, 'Lee', 'Unkrich');
+INSERT INTO Personen VALUES (1, 'James', 'Cameron');
+INSERT INTO Personen VALUES (2, 'J. J.', 'Abrams');
+INSERT INTO Personen VALUES (3, 'Colin', 'Trevorrow');
+INSERT INTO Personen VALUES(4, 'Joss', 'Whedon');
+INSERT INTO Personen VALUES(5, 'James', 'Wan');
+INSERT INTO Personen VALUES(6, 'David', 'Yates');
+INSERT INTO Personen VALUES(7, 'Chris', 'Buck');
+INSERT INTO Personen VALUES(8, 'Jennifer', 'Lee');
+INSERT INTO Personen VALUES(9, 'Bill', 'Condon');
+INSERT INTO Personen VALUES(10, 'F. Gary', 'Gray');
+INSERT INTO Personen VALUES(11, 'Shane', 'Black');
+INSERT INTO Personen VALUES(12, 'Pierre', 'Coffin');
+INSERT INTO Personen VALUES(13, 'Kyle', 'Balda');
+INSERT INTO Personen VALUES(14, 'Anthony', 'Russo');
+INSERT INTO Personen VALUES (15, 'Joe', 'Russo');
+INSERT INTO Personen VALUES(16, 'Michael', 'Bay');
+INSERT INTO Personen VALUES(17, 'Peter', 'Jackson');
+INSERT INTO Personen VALUES(18, 'Sam', 'Mendes');
+INSERT INTO Personen VALUES(19, 'Christopher', 'Nolan');
+INSERT INTO Personen VALUES(20, 'Lee', 'Unkrich');
 
-INSERT INTO PersonMoive(1,1, 'direction');
-INSERT INTO PersonMoive(1,2, 'direction');
-INSERT INTO PersonMoive(2,3, 'direction');
-INSERT INTO PersonMoive(3,4, 'direction');
-INSERT INTO PersonMoive(4,5, 'direction');
-INSERT INTO PersonMoive(5,6, 'direction');
-INSERT INTO PersonMoive(4,7, 'direction');
-INSERT INTO PersonMoive(6,8, 'direction');
-INSERT INTO PersonMoive(7,9, 'direction');
-INSERT INTO PersonMoive(8,9, 'direction');
-INSERT INTO PersonMoive(9,10, 'direction');
-INSERT INTO PersonMoive(10,11, 'direction');
-INSERT INTO PersonMoive(11,12, 'direction');
-INSERT INTO PersonMoive(12,13, 'direction');
-INSERT INTO PersonMoive(13,13, 'direction');
-INSERT INTO PersonMoive(14,14, 'direction');
-INSERT INTO PersonMoive(15,14, 'direction');
-INSERT INTO PersonMoive(16,15, 'direction');
-INSERT INTO PersonMoive(17,16, 'direction');
-INSERT INTO PersonMoive(18,17, 'direction');
-INSERT INTO PersonMoive(16,18, 'direction');
-INSERT INTO PersonMoive(19,19, 'direction');
-INSERT INTO PersonMoive(20,20, 'direction');
-
+INSERT INTO PersonMoive VALUES(1,1, 'direction');
+INSERT INTO PersonMoive VALUES(1,2, 'direction');
+INSERT INTO PersonMoive VALUES(2,3, 'direction');
+INSERT INTO PersonMoive VALUES(3,4, 'direction');
+INSERT INTO PersonMoive VALUES(4,5, 'direction');
+INSERT INTO PersonMoive VALUES(5,6, 'direction');
+INSERT INTO PersonMoive VALUES(4,7, 'direction');
+INSERT INTO PersonMoive VALUES(6,8, 'direction');
+INSERT INTO PersonMoive VALUES(7,9, 'direction');
+INSERT INTO PersonMoive VALUES(8,9, 'direction');
+INSERT INTO PersonMoive VALUES(9,10, 'direction');
+INSERT INTO PersonMoive VALUES(10,11, 'direction');
+INSERT INTO PersonMoive VALUES(11,12, 'direction');
+INSERT INTO PersonMoive VALUES(12,13, 'direction');
+INSERT INTO PersonMoive VALUES(13,13, 'direction');
+INSERT INTO PersonMoive VALUES(14,14, 'direction');
+INSERT INTO PersonMoive VALUES(15,14, 'direction');
+INSERT INTO PersonMoive VALUES(16,15, 'direction');
+INSERT INTO PersonMoive VALUES(17,16, 'direction');
+INSERT INTO PersonMoive VALUES(18,17, 'direction');
+INSERT INTO PersonMoive VALUES(16,18, 'direction');
+INSERT INTO PersonMoive VALUES(19,19, 'direction');
+INSERT INTO PersonMoive VALUES(20,20, 'direction');
