@@ -13,7 +13,7 @@ Movies(Movie_ID, Title, ReleaseDate, GenreID, Budget, OpeningWeek, Profit, Runti
 | Movie_ID | NUMBER(8) PRIMARY KEY | ID als Primärschlüssel, Zahl die Hochgezählt wird |
 | Title    | VARCHAR2(128)         | Titel des Films in deutscher Sprache |
 | ReleaseDate | DATE | Erscheinungsdatum bzw. Primere des Films
-| GenreID  | NUMBER(8) | Genre des Films als Fremdschlüssel (zu Genre.ID)
+| Genre_ID | NUMBER(8) | Genre des Films als Fremdschlüssel (zu Genre.ID)
 | Budget | NUMBER(10) | Budget des Films in Dollar
 | OpeningWeek | NUMBER(10) | Einspielergebnis in der ersten Woche (USA)
 | Profit | NUMBER(10) | Gesamt Einspielergebnis / Gewinn (USA)
