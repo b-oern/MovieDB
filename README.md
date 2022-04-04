@@ -1,7 +1,7 @@
 # MovieDB
 
-| Attribut | Datentyp | Beschreibung
-|ID  | NUMBER(8) PRIMARY KEY | ID als Primärschlüssel
+| Attribut | Datentyp | Beschreibung |
+|ID  | NUMBER(8) PRIMARY KEY | ID als Primärschlüssel |
 
 Title
 
