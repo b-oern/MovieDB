@@ -1,7 +1,7 @@
 DROP TABLE Movies;
 DROP VIEW Filme;
 
-DROP TABLE Personen;
+DROP TABLE Persons;
 
 CREATE TABLE Movies(
   Movie_ID NUMBER(8) PRIMARY KEY, 
@@ -19,8 +19,8 @@ CREATE TABLE Movies(
 
 DESC Movies;
 
-CREATE TABLE Personen(
-  Personen_ID NUMBER(8) PRIMARY KEY, 
+CREATE TABLE Persons(
+  Person_ID NUMBER(8) PRIMARY KEY, 
   Fristname VARCHAR2(128),
   Lastname VARCHAR2(128)
 );
@@ -28,10 +28,10 @@ CREATE TABLE Personen(
 DROP TABLE PersonMoive;
 
 CREATE TABLE PersonMoive(
-	PersonID NUMBER(8),
-	MovieID NUMBER(8),
+	Person_ID NUMBER(8),
+	Movie_ID NUMBER(8),
 	Role VARCHAR(32),
-	PRIMARY KEY (PersonID, MovieID, Role)
+	PRIMARY KEY (Person_ID, Movie_ID, Role)
 );
 
 CREATE VIEW Filme AS
@@ -127,26 +127,26 @@ INSERT INTO Movies
 INSERT INTO Movies 
   VALUES(20, 'Toy Story 3', TO_DATE('2010/07/29', 'yyyy/mm/dd'), 6, 200000000, 109000000, 414984497, 103, 0, null, 'Walt Disney Studios');
 
-INSERT INTO Personen VALUES (1, 'James', 'Cameron');
-INSERT INTO Personen VALUES (2, 'J. J.', 'Abrams');
-INSERT INTO Personen VALUES (3, 'Colin', 'Trevorrow');
-INSERT INTO Personen VALUES(4, 'Joss', 'Whedon');
-INSERT INTO Personen VALUES(5, 'James', 'Wan');
-INSERT INTO Personen VALUES(6, 'David', 'Yates');
-INSERT INTO Personen VALUES(7, 'Chris', 'Buck');
-INSERT INTO Personen VALUES(8, 'Jennifer', 'Lee');
-INSERT INTO Personen VALUES(9, 'Bill', 'Condon');
-INSERT INTO Personen VALUES(10, 'F. Gary', 'Gray');
-INSERT INTO Personen VALUES(11, 'Shane', 'Black');
-INSERT INTO Personen VALUES(12, 'Pierre', 'Coffin');
-INSERT INTO Personen VALUES(13, 'Kyle', 'Balda');
-INSERT INTO Personen VALUES(14, 'Anthony', 'Russo');
-INSERT INTO Personen VALUES (15, 'Joe', 'Russo');
-INSERT INTO Personen VALUES(16, 'Michael', 'Bay');
-INSERT INTO Personen VALUES(17, 'Peter', 'Jackson');
-INSERT INTO Personen VALUES(18, 'Sam', 'Mendes');
-INSERT INTO Personen VALUES(19, 'Christopher', 'Nolan');
-INSERT INTO Personen VALUES(20, 'Lee', 'Unkrich');
+INSERT INTO Persons VALUES (1, 'James', 'Cameron');
+INSERT INTO Persons VALUES (2, 'J. J.', 'Abrams');
+INSERT INTO Persons VALUES (3, 'Colin', 'Trevorrow');
+INSERT INTO Persons VALUES(4, 'Joss', 'Whedon');
+INSERT INTO Persons VALUES(5, 'James', 'Wan');
+INSERT INTO Persons VALUES(6, 'David', 'Yates');
+INSERT INTO Persons VALUES(7, 'Chris', 'Buck');
+INSERT INTO Persons VALUES(8, 'Jennifer', 'Lee');
+INSERT INTO Persons VALUES(9, 'Bill', 'Condon');
+INSERT INTO Persons VALUES(10, 'F. Gary', 'Gray');
+INSERT INTO Persons VALUES(11, 'Shane', 'Black');
+INSERT INTO Persons VALUES(12, 'Pierre', 'Coffin');
+INSERT INTO Persons VALUES(13, 'Kyle', 'Balda');
+INSERT INTO Persons VALUES(14, 'Anthony', 'Russo');
+INSERT INTO Persons VALUES (15, 'Joe', 'Russo');
+INSERT INTO Persons VALUES(16, 'Michael', 'Bay');
+INSERT INTO Persons VALUES(17, 'Peter', 'Jackson');
+INSERT INTO Persons VALUES(18, 'Sam', 'Mendes');
+INSERT INTO Persons VALUES(19, 'Christopher', 'Nolan');
+INSERT INTO Persons VALUES(20, 'Lee', 'Unkrich');
 
 INSERT INTO PersonMoive VALUES(1,1, 'direction');
 INSERT INTO PersonMoive VALUES(1,2, 'direction');
