@@ -19,7 +19,7 @@ Movies(Movie_ID, Title, ReleaseDate, Genre_ID, Budget, OpeningWeek, Profit, Runt
 | Profit | NUMBER(10) | Gesamt Einspielergebnis / Gewinn (USA)
 | Runtime | NUMBER(3) | Laufzeit des Films in Minuten
 | Certificate | NUMBER(3) | Altersbeschränkung
-| SequelOf| NUMBER(3) | Fremdschlüssel, Vorgänger Film (Movies.Movie_ID)
+| SequelOf| NUMBER(8) | Fremdschlüssel, Vorgänger Film (Movies.Movie_ID)
 | Distribution | VARCHAR(32) | Filmverleih
 
 Lizenz: CC BY-SA
