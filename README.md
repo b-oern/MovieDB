@@ -6,7 +6,7 @@ Einfaches Schema einer Filme-Datenbank
 
 | Attribut | Datentyp              | Beschreibung |
 | -------- | --------------------- | ------------ |
-| ID       | NUMBER(8) PRIMARY KEY | ID als Primärschlüssel |
+| ID       | NUMBER(8) PRIMARY KEY | ID als Primärschlüssel, Zahl die Hochgezählt wird |
 | Title    | VARCHAR2(128)         | Titel des Films in deutscher Sprache |
 | ReleaseDate | DATE | Erscheinungsdatum bzw. Primere des Films
 | GenreID  | NUMBER(8) | Genre des Films als Fremdschlüssel (zu Genre.ID)
