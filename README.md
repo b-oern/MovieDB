@@ -2,7 +2,7 @@
 
 Einfaches Schema einer Filme-Datenbank
 
-Movies(Movie_ID, Title, ReleaseDate, GenreID, Budget, OpeningWeek, Gross, Runtime, Certificate, SequelOf, Distribution)
+Movies(Movie_ID, Title, ReleaseDate, GenreID, Budget, OpeningWeek, Profit, Runtime, Certificate, SequelOf, Distribution)
 
 ## Tabelle Movies
 
