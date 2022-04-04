@@ -17,3 +17,5 @@ Einfaches Schema einer Filme-Datenbank
 | Certificate | NUMBER(3) | Altersbeschränkung
 | SequelOf| NUMBER(3) | Fremdschlüssel, Vorgänger Film (Movie.ID)
 | Distribution | VARCHAR(32) | Filmverleih
+
+Lizenz: CC BY-SA
