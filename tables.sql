@@ -5,7 +5,7 @@ DROP VIEW Filme;
 DROP TABLE Personen;
 
 CREATE TABLE Movies(
-  ID NUMBER(8) PRIMARY KEY, 
+  Movie_ID NUMBER(8) PRIMARY KEY, 
   Title VARCHAR2(128), 
   ReleaseDate DATE, 
   GenreID NUMBER(8), 
@@ -21,7 +21,7 @@ CREATE TABLE Movies(
 DESC Movies;
 
 CREATE TABLE Personen(
-  ID NUMBER(8) PRIMARY KEY, 
+  Personen_ID NUMBER(8) PRIMARY KEY, 
   Fristname VARCHAR2(128),
   Lastname VARCHAR2(128)
 );
@@ -35,7 +35,7 @@ CREATE TABLE PersonMoive(
 
 CREATE VIEW Filme AS
   SELECT
-    ID, 
+    Movie_ID, 
     Title AS Titel, 
     ReleaseDate AS PremierenDatum, 
     GenreID, 
@@ -52,7 +52,7 @@ CREATE VIEW Filme AS
 DROP TABLE Genres;
 
 CREATE TABLE Genres (
-  ID NUMBER(8) PRIMARY KEY, 
+  Genre_ID NUMBER(8) PRIMARY KEY, 
   Name VARCHAR2(32)
 );
 
