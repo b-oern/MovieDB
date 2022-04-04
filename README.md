@@ -1,5 +1,9 @@
 # MovieDB
 
+Einfaches Schema einer Filme-Datenbank
+
+## Tabelle Movies
+
 | Attribut | Datentyp              | Beschreibung |
 | -------- | --------------------- | ------------ |
 | ID       | NUMBER(8) PRIMARY KEY | ID als Primärschlüssel |
