@@ -21,7 +21,7 @@ DESC Movies;
 
 CREATE TABLE Persons(
   Person_ID NUMBER(8) PRIMARY KEY, 
-  Fristname VARCHAR2(128),
+  Firstname VARCHAR2(128),
   Lastname VARCHAR2(128)
 );
 
