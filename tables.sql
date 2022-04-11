@@ -25,9 +25,9 @@ CREATE TABLE Persons(
   Lastname VARCHAR2(128)
 );
 
-DROP TABLE PersonMoive;
+DROP TABLE PersonsMovies;
 
-CREATE TABLE PersonMoive(
+CREATE TABLE PersonsMovies(
 	Person_ID NUMBER(8),
 	Movie_ID NUMBER(8),
 	Role VARCHAR(32),
@@ -148,26 +148,26 @@ INSERT INTO Persons VALUES(18, 'Sam', 'Mendes');
 INSERT INTO Persons VALUES(19, 'Christopher', 'Nolan');
 INSERT INTO Persons VALUES(20, 'Lee', 'Unkrich');
 
-INSERT INTO PersonMoive VALUES(1,1, 'direction');
-INSERT INTO PersonMoive VALUES(1,2, 'direction');
-INSERT INTO PersonMoive VALUES(2,3, 'direction');
-INSERT INTO PersonMoive VALUES(3,4, 'direction');
-INSERT INTO PersonMoive VALUES(4,5, 'direction');
-INSERT INTO PersonMoive VALUES(5,6, 'direction');
-INSERT INTO PersonMoive VALUES(4,7, 'direction');
-INSERT INTO PersonMoive VALUES(6,8, 'direction');
-INSERT INTO PersonMoive VALUES(7,9, 'direction');
-INSERT INTO PersonMoive VALUES(8,9, 'direction');
-INSERT INTO PersonMoive VALUES(9,10, 'direction');
-INSERT INTO PersonMoive VALUES(10,11, 'direction');
-INSERT INTO PersonMoive VALUES(11,12, 'direction');
-INSERT INTO PersonMoive VALUES(12,13, 'direction');
-INSERT INTO PersonMoive VALUES(13,13, 'direction');
-INSERT INTO PersonMoive VALUES(14,14, 'direction');
-INSERT INTO PersonMoive VALUES(15,14, 'direction');
-INSERT INTO PersonMoive VALUES(16,15, 'direction');
-INSERT INTO PersonMoive VALUES(17,16, 'direction');
-INSERT INTO PersonMoive VALUES(18,17, 'direction');
-INSERT INTO PersonMoive VALUES(16,18, 'direction');
-INSERT INTO PersonMoive VALUES(19,19, 'direction');
-INSERT INTO PersonMoive VALUES(20,20, 'direction');
+INSERT INTO PersonsMovies VALUES(1,1, 'direction');
+INSERT INTO PersonsMovies VALUES(1,2, 'direction');
+INSERT INTO PersonsMovies VALUES(2,3, 'direction');
+INSERT INTO PersonsMovies VALUES(3,4, 'direction');
+INSERT INTO PersonsMovies VALUES(4,5, 'direction');
+INSERT INTO PersonsMovies VALUES(5,6, 'direction');
+INSERT INTO PersonsMovies VALUES(4,7, 'direction');
+INSERT INTO PersonsMovies VALUES(6,8, 'direction');
+INSERT INTO PersonsMovies VALUES(7,9, 'direction');
+INSERT INTO PersonsMovies VALUES(8,9, 'direction');
+INSERT INTO PersonsMovies VALUES(9,10, 'direction');
+INSERT INTO PersonsMovies VALUES(10,11, 'direction');
+INSERT INTO PersonsMovies VALUES(11,12, 'direction');
+INSERT INTO PersonsMovies VALUES(12,13, 'direction');
+INSERT INTO PersonsMovies VALUES(13,13, 'direction');
+INSERT INTO PersonsMovies VALUES(14,14, 'direction');
+INSERT INTO PersonsMovies VALUES(15,14, 'direction');
+INSERT INTO PersonsMovies VALUES(16,15, 'direction');
+INSERT INTO PersonsMovies VALUES(17,16, 'direction');
+INSERT INTO PersonsMovies VALUES(18,17, 'direction');
+INSERT INTO PersonsMovies VALUES(16,18, 'direction');
+INSERT INTO PersonsMovies VALUES(19,19, 'direction');
+INSERT INTO PersonsMovies VALUES(20,20, 'direction');
