@@ -8,6 +8,7 @@ tasks:
       docker exec -i -u postgres postgresDB15 psql < .postgres/create_admin.sql &&
       docker exec -i -u postgres postgresDB15 psql moviedb < tables.sql &&
       sudo apt install -y postgresql-client
+      gp open POSTGRES.md 
       gp sync-done database-running
   - name: start container and run a session as postgres owner
     init: gp sync-await database-running
