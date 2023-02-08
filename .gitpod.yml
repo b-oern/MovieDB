@@ -15,7 +15,8 @@ tasks:
       docker start postgresDB15 &&
       sleep 1s &&
       echo "Postgres is running at localhost port 5432, starting session" && 
-      docker exec -it -u postgres postgresDB15 psql 
+      #docker exec -it -u postgres postgresDB15 psql 
+      PGPASSWORD=123456 psql -h 127.0.0.1 -U muser moviedb
 ports:
   - port: 5432
     onOpen: ignore
