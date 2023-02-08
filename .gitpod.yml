@@ -5,8 +5,8 @@ tasks:
       gp open README.md
       docker run -d -p 5432:5432 --name postgresDB15 -e POSTGRES_PASSWORD=welkom01 postgres:15.1 &&
       sleep 5s &&
-      docker exec -i -u postgres postgresDB15 psql < .postgre/create_admin.sql &&
-      docker exec -i -u postgres postgresDB15 psql moviedb < .postgre/create_admin.sql &&
+      docker exec -i -u postgres postgresDB15 psql < .postgres/create_admin.sql &&
+      docker exec -i -u postgres postgresDB15 psql moviedb < tables.sql &&
       gp sync-done database-running
   - name: start container and run a session as postgres owner
     init: gp sync-await database-running
